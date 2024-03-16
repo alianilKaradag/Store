@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IKYnxg5lvuObYCMC6ewo1qgZxaVQ0mzHOwkjXMZuKHOgnmiYr9DswxwPtTFu33kmFWp1O8bP7SrMgt6rgXGjWg==",
+  "dgSpecHash": "TyYQOj1bxCeoGrNS4Hy3c3Wy2Rpf7g+Iulr+dIcyj/zxjBqjFaCLS+LcfQmkqdVSp9akXGSPgKF+v+nRGruVhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\anila\\Documents\\WebProjects\\Store\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
@@ -32,9 +32,9 @@
     "C:\\Users\\anila\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
