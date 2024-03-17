@@ -7,6 +7,9 @@ namespace Repositories
     {
         public CategoryRepository(RepositoryContext context) : base(context)
         {
+
         }
+
+        
     }
 }
