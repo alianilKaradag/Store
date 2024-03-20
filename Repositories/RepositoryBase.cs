@@ -11,6 +11,7 @@ namespace Repositories
         protected RepositoryBase(RepositoryContext context){
             _context = context;
         }
+
         public IQueryable<T> FindAll(bool trackChanges)
         {
             return trackChanges
@@ -24,5 +25,12 @@ namespace Repositories
                 ? _context.Set<T>().Where(expression).SingleOrDefault()
                 : _context.Set<T>().Where(expression).AsNoTracking().SingleOrDefault();
         }
+
+        
+        public void Create(T entity)
+        {
+            _context.Set<T>().Add(entity);
+        }
+
     }
 }

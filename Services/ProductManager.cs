@@ -27,5 +27,11 @@ namespace Services
 
             return product;
         }
+
+        public void CreateProduct(Product product)
+        {
+            _manager.Product.CreateProduct(product);
+            _manager.Save();
+        }
     }
 }

@@ -4,7 +4,9 @@ namespace Services.Contracts
 {
     public interface IProductService
     {
-        IEnumerable<Product> GetAllProducts(bool trackChanges);
-        Product? GetOneProduct(int id, bool trackChanges);
+        public IEnumerable<Product> GetAllProducts(bool trackChanges);
+        public Product? GetOneProduct(int id, bool trackChanges);
+
+        public void CreateProduct(Product product);
     }
 }
