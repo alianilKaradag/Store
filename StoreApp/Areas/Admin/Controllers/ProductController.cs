@@ -20,13 +20,21 @@ namespace StoreApp.Areas.Admin.Controllers
             return View(model);
         }
 
-        public IActionResult Create(){
+        public IActionResult Create()
+        {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] Product product){
+        public IActionResult Create([FromForm] Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                _manager.ProductService.CreateProduct(product);
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
     }
