@@ -8,5 +8,6 @@ namespace Services.Contracts
         public Product? GetOneProduct(int id, bool trackChanges);
 
         public void CreateProduct(Product product);
+        public void UpdateOneProduct(Product product);
     }
 }
