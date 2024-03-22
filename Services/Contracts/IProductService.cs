@@ -9,5 +9,7 @@ namespace Services.Contracts
 
         public void CreateProduct(Product product);
         public void UpdateOneProduct(Product product);
+
+        public void DeleteOneProduct(int id);
     }
 }
