@@ -13,7 +13,7 @@ namespace Repositories
         public IQueryable<Product> GetAllProducts(bool trackChanges) => FindAll(trackChanges);
 
         public Product? GetOneProduct(int id, bool trackChanges){
-            return FindByCondition( p => p.Id.Equals(id),trackChanges);
+            return FindByCondition( p => p.ProductId.Equals(id),trackChanges);
         }   
 
         public void CreateOneProduct(Product product) => Create(product);

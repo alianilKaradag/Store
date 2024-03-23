@@ -25,7 +25,7 @@ namespace StoreApp.Migrations
                 name: "Products",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     ProductName = table.Column<string>(type: "TEXT", nullable: false),
                     Price = table.Column<decimal>(type: "TEXT", nullable: false),
@@ -33,7 +33,7 @@ namespace StoreApp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Products", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.ProductId);
                     table.ForeignKey(
                         name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
@@ -53,37 +53,37 @@ namespace StoreApp.Migrations
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 1, 2, 17000m, "Computer" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 2, 2, 1000m, "Keyboard" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 3, 2, 500m, "Mouse" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 4, 2, 7000m, "Monitor" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 5, 2, 1500m, "Deck" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 6, 1, 50m, "History" });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Price", "ProductName" },
+                columns: new[] { "ProductId", "CategoryId", "Price", "ProductName" },
                 values: new object[] { 7, 1, 75m, "Hamlet" });
 
             migrationBuilder.CreateIndex(

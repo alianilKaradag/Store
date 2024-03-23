@@ -11,10 +11,10 @@ namespace Repositories.Config
             builder.HasKey(x=> x.CategoryId);
             builder.Property(x=> x.CategoryName).IsRequired();
 
-            builder.HasData(
-                new Category(){CategoryId = 1, CategoryName = "Book"},
-                new Category(){CategoryId = 2, CategoryName = "Electronic"}
-            );
+            // builder.HasData(
+            //     new Category(){CategoryId = 1, CategoryName = "Book"},
+            //     new Category(){CategoryId = 2, CategoryName = "Electronic"}
+            // );
         }
     }
 }

@@ -11,7 +11,7 @@ using Repositories;
 namespace StoreApp.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240322160833_init")]
+    [Migration("20240323132822_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,7 +48,7 @@ namespace StoreApp.Migrations
 
             modelBuilder.Entity("Entities.Models.Product", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -62,7 +62,7 @@ namespace StoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.HasKey("ProductId");
 
                     b.HasIndex("CategoryId");
 
@@ -71,49 +71,49 @@ namespace StoreApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            ProductId = 1,
                             CategoryId = 2,
                             Price = 17000m,
                             ProductName = "Computer"
                         },
                         new
                         {
-                            Id = 2,
+                            ProductId = 2,
                             CategoryId = 2,
                             Price = 1000m,
                             ProductName = "Keyboard"
                         },
                         new
                         {
-                            Id = 3,
+                            ProductId = 3,
                             CategoryId = 2,
                             Price = 500m,
                             ProductName = "Mouse"
                         },
                         new
                         {
-                            Id = 4,
+                            ProductId = 4,
                             CategoryId = 2,
                             Price = 7000m,
                             ProductName = "Monitor"
                         },
                         new
                         {
-                            Id = 5,
+                            ProductId = 5,
                             CategoryId = 2,
                             Price = 1500m,
                             ProductName = "Deck"
                         },
                         new
                         {
-                            Id = 6,
+                            ProductId = 6,
                             CategoryId = 1,
                             Price = 50m,
                             ProductName = "History"
                         },
                         new
                         {
-                            Id = 7,
+                            ProductId = 7,
                             CategoryId = 1,
                             Price = 75m,
                             ProductName = "Hamlet"
