@@ -19,6 +19,8 @@ builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseHttpsRedirection();

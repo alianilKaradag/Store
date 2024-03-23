@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B17Ce0czUY0xNbfzGS6U8X9WAO9+szE67AFOZHuGd/FBsA3oVhbfULLIPM+jmh7E091ISCt9QRnUYGvnsjhINA==",
+  "dgSpecHash": "tKv82RksQyJsd1jh++mjx8VG6WzFkE+yyrteONInKCVVEPuUkQYe4JqKxNPjIlC0ULEqb0lfawTR2Do+tzYVOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\anila\\Documents\\WebProjects\\Store\\Services\\Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\anila\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
@@ -32,9 +35,9 @@
     "C:\\Users\\anila\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }

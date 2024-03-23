@@ -1,3 +1,5 @@
+using AutoMapper;
+using Entities.Dtos;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Repositories.Contracts;
@@ -8,10 +10,12 @@ namespace Services
     public class ProductManager : IProductService
     {
         private readonly IRepositoryManager _manager;
+        private readonly IMapper _mapper;
 
-        public ProductManager(IRepositoryManager manager)
+        public ProductManager(IRepositoryManager manager, IMapper mapper)
         {
             _manager = manager;
+            _mapper = mapper;
         }
 
         public IEnumerable<Product> GetAllProducts(bool trackChanges)
@@ -30,8 +34,9 @@ namespace Services
             return product;
         }
 
-        public void CreateProduct(Product product)
+        public void CreateProduct(ProductDtoForInsertion productDto)
         {
+            var product = _mapper.Map<Product>(productDto);
             _manager.Product.CreateOneProduct(product);
             _manager.Save();
         }
