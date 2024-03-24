@@ -4,7 +4,7 @@
     <div class="display-6"> Edit </div>
 </div>
 
-<form method="post" asp-action="Update">
+<form method="post" asp-action="Update" enctype="multipart/form-data">
     <div class="text-danger" asp-validation-summary="All"></div>
     <input type="hidden" asp-for="ProductId">
 
@@ -17,9 +17,24 @@
         <label asp-for="ProductName">Product Name</label>
         <input class="form-control" asp-for="ProductName">
     </div>
+
+    <div class="form-group my-3">
+        <label asp-for="Summary">Summary</label>
+        <input class="form-control" asp-for="Summary">
+    </div>
+
     <div class="form-group my-3">
         <label asp-for="Price">Price</label>
         <input class="form-control" asp-for="Price">
+    </div>
+
+    <div class="form-group my-4">
+        <img class="rounded shadow" src="@Model?.ImageUrl" width="150"/>
+    </div>
+
+    <div class="form-group my-3">
+        <label asp-for="ImageUrl">ImageUrl</label>
+        <input type="file" name="file" class="form-control">
     </div>
 
     <div class="form-group my-3">
