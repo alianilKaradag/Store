@@ -9,7 +9,7 @@
             Lines = new List<CartLine>();
         }
 
-        public void AddItem(Product product, int quantity){
+        public virtual void AddItem(Product product, int quantity){
             CartLine? line = Lines.Where(x=> x.Product.ProductId.Equals(product.ProductId)).FirstOrDefault();
 
             if (line is null){
@@ -23,7 +23,7 @@
             }
         }
 
-        public void RemoveLine(Product product){
+        public virtual void RemoveLine(Product product){
             Lines.RemoveAll(x=> x.Product.ProductId.Equals(product.ProductId));
         }
 
@@ -31,6 +31,6 @@
             return Lines.Sum(x=> x.Product.Price * x.Quantity);
         }
 
-        public void Clear() => Lines.Clear();
+        public virtual void Clear() => Lines.Clear();
     }
 }
