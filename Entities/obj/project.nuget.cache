@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ue174/S2WloFS9weh2Ta9LHVqUFqByaRfVrXqR8EacjIcdsVFQZ8F9tUdelL6h954Zif2HRXDe/4NiGXlFWA3A==",
+  "dgSpecHash": "/gc7pDHnTJsW9pJL4b17HhRpzg4ZJsmLblJJwReVQHJI1pnC0JgtXTxkgyLw2UgpuSIZlNasSSIn20RmCAwEIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\anila\\Documents\\WebProjects\\Store\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
   ],
   "logs": []
 }
