@@ -6,6 +6,7 @@ namespace Services.Contracts
     public interface IProductService
     {
         public IEnumerable<Product> GetAllProducts(bool trackChanges);
+        public IEnumerable<Product> GetShowcaseProducts(bool trackChanges);
         public Product? GetOneProduct(int id, bool trackChanges);
 
         public void CreateProduct(ProductDtoForInsertion productDto);
