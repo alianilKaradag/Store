@@ -1,5 +1,7 @@
 
 using Entities.Models;
+using Entities.RequestParameters;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 
 namespace Repositories
@@ -25,6 +27,13 @@ namespace Repositories
         public IQueryable<Product> GetShowcaseProducts(bool trackChanges)
         {
             return FindAll(trackChanges).Where(x=> x.ShowCase.Equals(true));
+        }
+
+        public IQueryable<Product> GetAllProductsWithDetails(ProductRequestParameters p)
+        {
+            return p.CategoryId is null
+                    ? _context.Products.Include(x => x.Category)
+                    : _context.Products.Include(x=> x.Category).Where(x=> x.CategoryId.Equals(p.CategoryId));
         }
     }
 }

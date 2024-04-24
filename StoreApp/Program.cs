@@ -8,6 +8,7 @@ builder.Services.ConfigureSession();
 builder.Services.ConfigureRepositoryRegistration();
 builder.Services.ConfigureServiceRegistration();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureRouting();
 
 
 var app = builder.Build();

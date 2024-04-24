@@ -49,5 +49,14 @@ namespace StoreApp.Infrastructure.Extensions
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<IOrderService, OrderManager>();
         }
+
+        public static void ConfigureRouting(this IServiceCollection services){
+            services.AddRouting(options =>{
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = false;
+            });
+        } 
+
     }
+
 }

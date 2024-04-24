@@ -1,6 +1,7 @@
 using AutoMapper;
 using Entities.Dtos;
 using Entities.Models;
+using Entities.RequestParameters;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Repositories.Contracts;
 using Services.Contracts;
@@ -74,6 +75,11 @@ namespace Services
         {
             var products = _manager.Product.GetShowcaseProducts(trackChanges);
             return products;
+        }
+
+        public IEnumerable<Product> GetAllProductsWithDetails(ProductRequestParameters p)
+        {
+            return _manager.Product.GetAllProductsWithDetails(p);
         }
     }
 }
