@@ -3,10 +3,11 @@ using Entities.Models;
 using Entities.RequestParameters;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
+using Repositories.Extensions;
 
 namespace Repositories
 {
-    public class ProductRepository : RepositoryBase<Product>, IProductRepository
+    public sealed class ProductRepository : RepositoryBase<Product>, IProductRepository
     {
         public ProductRepository(RepositoryContext context) : base(context)
         {
@@ -31,9 +32,7 @@ namespace Repositories
 
         public IQueryable<Product> GetAllProductsWithDetails(ProductRequestParameters p)
         {
-            return p.CategoryId is null
-                    ? _context.Products.Include(x => x.Category)
-                    : _context.Products.Include(x=> x.Category).Where(x=> x.CategoryId.Equals(p.CategoryId));
+            return _context.Products.FilteredByCategoryId(p.CategoryId).FilteredBySearchTerm(p.SearchTerm);
         }
     }
 }
