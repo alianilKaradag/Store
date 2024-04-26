@@ -32,7 +32,10 @@ namespace Repositories
 
         public IQueryable<Product> GetAllProductsWithDetails(ProductRequestParameters p)
         {
-            return _context.Products.FilteredByCategoryId(p.CategoryId).FilteredBySearchTerm(p.SearchTerm);
+            return _context.Products
+            .FilteredByCategoryId(p.CategoryId)
+            .FilteredBySearchTerm(p.SearchTerm)
+            .FilteredByPrice(p.MinPrice, p.MaxPrice, p.IsValidPrice);
         }
     }
 }
