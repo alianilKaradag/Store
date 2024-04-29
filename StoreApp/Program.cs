@@ -32,6 +32,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapRazorPages();
 });
 
-app.ConfigureAndCheckMigration();
 app.ConfigureLocalization();
+app.ConfigureDefaultAdminUser();
+app.ConfigureAndCheckMigration();
 app.Run();

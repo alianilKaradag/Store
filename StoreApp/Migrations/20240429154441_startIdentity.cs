@@ -237,6 +237,21 @@ namespace StoreApp.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "12ceb868-d049-4d89-8d24-759ed62810ba", "b0204574-87ce-4b28-9375-57d3a35c7ee2", "Editor", "EDITOR" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "a6496913-9dff-4359-9e74-7b6c95ee0260", "b30e8e0f-3ab8-488e-8f8f-a39fc6ed5a25", "User", "USER" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "bcc4f93c-d853-4c76-b4a5-64ff1629f37c", "6fb7e93a-5c16-4c15-b467-2b3fff5de569", "Admin", "ADMIN" });
+
+            migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryId", "CategoryName" },
                 values: new object[] { 1, "Book" });
