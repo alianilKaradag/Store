@@ -1,3 +1,4 @@
+using Entities.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
@@ -16,6 +17,21 @@ namespace StoreApp.Areas.Admin.Controllers
         public IActionResult Index(){
             var users = _manager.AuthService.GetAllUsers();
             return View(users);
+        }
+
+        public IActionResult Create(){
+            return View(new UserDtoForCreation(){
+                Roles = new HashSet<string>(_manager.AuthService.Roles.Select(x=> x.Name).ToList())
+            });
+        }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([FromForm] UserDtoForCreation userDto){
+            var result = await _manager.AuthService.CreateUser(userDto);
+            return result.Succeeded
+                ? RedirectToAction("Index")
+                : View();
         }
     }
 }
