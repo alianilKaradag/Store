@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entities.Dtos
 {
-    public class UserDto
+    public record UserDto
     {
         [DataType(DataType.Text)]
         [Required(ErrorMessage = "Username is required!")]

@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entities.Dtos
 {
-    public class UserDtoForCreation : UserDto
+    public record UserDtoForCreation : UserDto
     {
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "Password is required!")]
