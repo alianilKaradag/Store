@@ -14,24 +14,36 @@ namespace StoreApp.Areas.Admin.Controllers
             _manager = manager;
         }
 
-        public IActionResult Index(){
+        public IActionResult Index()
+        {
             var users = _manager.AuthService.GetAllUsers();
             return View(users);
         }
 
-        public IActionResult Create(){
-            return View(new UserDtoForCreation(){
-                Roles = new HashSet<string>(_manager.AuthService.Roles.Select(x=> x.Name).ToList())
-            });
+        public IActionResult Create()
+        {
+            return View(GetNewUserDtoWithRoles());
         }
-        
+
+        private UserDtoForCreation GetNewUserDtoWithRoles(){
+            return new UserDtoForCreation()
+            {
+                Roles = new HashSet<string>(_manager.AuthService.Roles.Select(x => x.Name).ToList())
+            };
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([FromForm] UserDtoForCreation userDto){
-            var result = await _manager.AuthService.CreateUser(userDto);
-            return result.Succeeded
-                ? RedirectToAction("Index")
-                : View();
+        public async Task<IActionResult> Create([FromForm] UserDtoForCreation userDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _manager.AuthService.CreateUser(userDto);
+                return result.Succeeded
+                    ? RedirectToAction("Index")
+                    : View(GetNewUserDtoWithRoles());
+            }
+            return View(GetNewUserDtoWithRoles());
         }
     }
 }
