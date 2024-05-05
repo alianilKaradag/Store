@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StoreApp.Migrations
 {
-    public partial class identity : Migration
+    public partial class initialize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -239,17 +239,17 @@ namespace StoreApp.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "700eabd0-e7a5-4a80-a996-323bf0114798", "816366c1-b39f-4e5d-9e7f-1a0120943c26", "Admin", "ADMIN" });
+                values: new object[] { "144aaed4-d9bf-4232-a343-7488f1176c78", "d05d3978-eb3d-4e69-863f-21fdcb8e1b10", "User", "USER" });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "8568331c-0058-4fff-8cac-ae2faae5f705", "f2ed6db5-4a26-4215-885c-b9fccfe429b9", "User", "USER" });
+                values: new object[] { "19ec0b80-46b6-4bf4-8029-755c03c04906", "3c83fb3e-a9ae-4d2f-aa20-7d9b9920c4aa", "Editor", "EDITOR" });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "d86fd23a-66b4-4b2f-8e41-8a247c280cf4", "ee66d9e9-9c0d-4a6b-8969-e0e05a9f5178", "Editor", "EDITOR" });
+                values: new object[] { "656ef0ad-3a63-42d6-ade7-20298b8723a0", "4c7afbfc-972e-4edf-a243-65c6e135a2f3", "Admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
