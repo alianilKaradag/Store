@@ -8,6 +8,7 @@ namespace StoreApp.Areas.Admin.Controllers
     public class DashboardController : Controller
     {
         public IActionResult Index(){
+            TempData["info"] = $"Welcome back, {DateTime.Now.ToShortTimeString()}";
             return View();
         }
     }
