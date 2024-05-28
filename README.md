@@ -30,4 +30,4 @@ Project Content
 Screen Shots
 --------------------------------------------------------------------------------------
 
-![VerticalLight](../StoreApp/ScreenShots/0.png)
+![VerticalLight](../blob/main/StoreApp/ScreenShots/0.png)
