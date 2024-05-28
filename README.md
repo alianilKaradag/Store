@@ -30,4 +30,4 @@ Project Content
 Screen Shots
 --------------------------------------------------------------------------------------
 
-![VerticalLight](../blob/main/StoreApp/ScreenShots/0.png)
+![VerticalLight](https://github.com/alianilKaradag/Store/blob/main/StoreApp/ScreenShots/0.png)
