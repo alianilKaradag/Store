@@ -1,6 +1,6 @@
 # Store Web Project
  
-A demo project of an e-commerce website including the basics of MVC.
+A demo project of an e-commerce website including the basics of ASP.NET Core MVC.
 
 Project Content
 --------------------------------------------------------------------------------------
