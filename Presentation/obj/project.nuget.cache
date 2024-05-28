@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f7a+I79Sp5VevcS+AjlX26DJa+gFPXlA55XaMnEf2UmU2W4c3KdUUBcTuUs9Ygm/Mo3NlCM/L6EgVWIqX6aQUw==",
+  "dgSpecHash": "k+mKPPWHBJ2WxN97kegOuXAugfKcueoLA+aJJ44jf7WKazj3y6q8qyFgngqZBj0f9zpr0/37s19edel9+RLnbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\anila\\Documents\\WebProjects\\Store\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -84,9 +84,9 @@
     "C:\\Users\\anila\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.30\\microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.30\\microsoft.windowsdesktop.app.ref.6.0.30.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.30\\microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512"
   ],
   "logs": []
 }

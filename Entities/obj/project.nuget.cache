@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qrROsgAA7bgg68NzppJLTiPlUnZza51hW7hHSdw0mRHZcT54SPsUqcUnySf4wmJU09mhW0UofEdJVLSTkrD6fQ==",
+  "dgSpecHash": "W4+EE+ugbg4DnBdrNNQ/bpDrHlcMW/W82OUlrm2TW621SIBDDiFEuHdhroPTUe4UT70ByANyI1Cf7+2cxckxjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\anila\\Documents\\WebProjects\\Store\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
@@ -25,9 +25,9 @@
     "C:\\Users\\anila\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\anila\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512"
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.30\\microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.30\\microsoft.windowsdesktop.app.ref.6.0.30.nupkg.sha512",
+    "C:\\Users\\anila\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.30\\microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512"
   ],
   "logs": []
 }
